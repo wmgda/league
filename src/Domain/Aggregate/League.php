@@ -2,6 +2,7 @@
 
 namespace Modules\League\Domain;
 
+use Domain\Aggregate\AggregateId\LeagueId;
 use Domain\EventEngine\Aggregate;
 use Domain\EventEngine\AggregateId;
 use Domain\EventEngine\EventSourced;

@@ -5,7 +5,7 @@ namespace Domain\Aggregate\AggregateId;
 use Domain\EventEngine\AggregateId;
 use Ramsey\Uuid\Uuid;
 
-class UserId implements AggregateId
+class MatchId implements AggregateId
 {
     /** @var string */
     private $id;
