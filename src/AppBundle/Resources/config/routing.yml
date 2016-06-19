@@ -1,0 +1,7 @@
+leagues:
+    type:     rest
+    resource: AppBundle\Controller\LeaguesController
+
+users:
+    type:     rest
+    resource: AppBundle\Controller\UsersController

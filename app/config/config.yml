@@ -67,6 +67,13 @@ swiftmailer:
     password:  "%mailer_password%"
     spool:     { type: memory }
 
+fos_rest:
+    routing_loader:
+        default_format: json
+        include_format: false
+
+nelmio_api_doc: ~
+
 hwi_oauth:
     # list of names of the firewalls in which this bundle is active, this setting MUST be set
     firewall_names: [secured_area]

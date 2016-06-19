@@ -1,14 +1,18 @@
 app:
-    resource: "@AppBundle/Controller/"
-    type:     annotation
+    prefix:   /api
+    resource: "@AppBundle/Resources/config/routing.yml"
+
+NelmioApiDocBundle:
+    resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
+    prefix:   /api/doc
 
 hwi_oauth_redirect:
     resource: "@HWIOAuthBundle/Resources/config/routing/redirect.xml"
-    prefix:   /connect
+    prefix:   /api/connect
 
 hwi_oauth_login:
     resource: "@HWIOAuthBundle/Resources/config/routing/login.xml"
-    prefix:   /login
+    prefix:   /api/login
 
 github_login:
-    path: /login/check-github
+    path:     /api/login/check-github
