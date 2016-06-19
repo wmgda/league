@@ -11,9 +11,9 @@ class UserWasCreated implements DomainEvent
     /** @var UserId */
     private $userId;
 
-    public function __construct()
+    public function __construct(UserId $userId)
     {
-
+        $this->userId = $userId;
     }
 
     public function getAggregateId() : AggregateId
